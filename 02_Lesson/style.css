@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Lato, sans-serif;
+}
+
+.container {
+    max-width: 1142px;
+    margin: 0 auto;
+}
+
+.menu {
+    max-width: 1600px;
+    background: #222222;
+    height: 75px;
+    display: block;
+    margin: 0 auto;
+    padding: 0px 231px;
+}
+
+.menuButtons {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.menu_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 41px;
+}
+
+.menu_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 34px;
+    margin-right: 20px;
+}
+
+.basket_ico {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.basket {
+    display: block;
+    position: absolute;
+}
+
+.circle {
+    display: block;
+    position: absolute;
+    top: -22px;
+    left: 8px;
+}
+
+.number {
+    display: block;
+    position: absolute;
+    top: -23px;
+    left: 14px;
+}
+
+.header {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1600px;
+    margin-bottom: 64px;
+    background: #F1E4E6;
+}
+
+.manImg {
+    display: block;
+    width: 50%;
+    height: 50%;
+}
+
+.man_img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+
+.brandRight {
+    width: 50%;
+}
+
+.brandPromoWrap {
+    margin-left: 61px;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}
+
+.brandPromoWrap div:first-child {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 57px;
+}
+
+.brandPromoWrap div:last-child {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.brandPromoWrap span {
+    color: #F16D7F;
+}
+
+/*CARDS*/
+.offer {
+    margin-bottom: 96px;
+}
+
+.cards {
+    display: grid;
+    align-content: start;
+    gap: 30px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 260px 180px;
+}
+
+.card1 {
+    position: relative;
+}
+
+.card3 {
+    position: relative;
+    grid-column: 1/4;
+}
+
+.cardImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.offer_text {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offerText_top {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.offerTextBottom {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+
+}
+
+/*FEATURED*/
+.title_featured {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.title_featured .top {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.title_featured .bottom {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.featured_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(320px, 1fr);
+    gap: 30px;
+}
+
+section {
+    background-color: #F8F8F8;
+    width: 100%;
+    max-width: 360px;
+    max-height: 580px;
+}
+
+.featured_cards img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.card_text {
+    padding: 24px 29px 20px 16px;
+}
+
+.card_text_head {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    padding-bottom: 13px;
+}
+
+.card_text_info {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    padding-bottom: 18px;
+}
+
+.card_text_price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.browseAll_button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 212px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    margin-top: 48px;
+    margin-bottom: 95px;
+}
+
+
+
+
+/*IPAD*/
+
+@media (max-width: 1024px) {
+
+    .menu {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .menu_right {
+        margin-right: 40px;
+    }
+
+    .header {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .brandPromoWrap {
+        margin-left: 40px;
+    }
+
+    .brandPromoWrap div:first-child {
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .brandPromoWrap div:last-child {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .offer {
+        margin-bottom: 155px;
+    }
+
+    .cards {
+        display: grid;
+        gap: 19px;
+        justify-content: center;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .title_featured {
+        margin-bottom: 72px;
+    }
+
+    .featured_cards {
+        justify-content: center;
+        grid-template-columns: 360px 360px;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .browseAll_button {
+        margin-top: 32px;
+        margin-bottom: 65px;
+    }
+}
+
+
+
+
+
+
+/*PHONE*/
+
+@media (max-width: 667px) {
+    .menu {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .menu_right {
+        margin-right: -30px;
+    }
+
+    .header {
+        align-content: flex-start;
+        margin-bottom: 64px;
+    }
+
+    .manImg {
+        display: none;
+    }
+
+    .brandRight {
+        width: 100%;
+        min-height: 363px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #222222;
+
+    }
+
+    .brandPromoWrap {
+        margin-left: 0;
+    }
+
+    .menu {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .basket_ico {
+        display: none;
+    }
+
+    .contacts {
+        display: none;
+    }
+
+    .legend_img {
+        max-width: 375px;
+
+        width: 100%;
+    }
+
+    .offer {
+        margin-bottom: 64px;
+    }
+
+    .cards {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 248px 248px 248px;
+        grid-auto-rows: 111px;
+        grid-template-columns: minmax(320px, 343px);
+        justify-content: center;
+        padding: 0;
+    }
+
+    .card3 {
+        grid-column: auto;
+        grid-template-rows: 111px;
+    }
+
+    .cardImg {
+        height: 100%;
+        min-width: 320px;
+        object-fit: cover;
+        position: absolute;
+    }
+
+    .brandPromoWrap div:first-child {
+        font-weight: 900;
+        font-size: 38px;
+        line-height: 45px;
+    }
+
+    .brandPromoWrap div:last-child {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .title_featured {
+        margin-bottom: 65px;
+    }
+
+    .featured_cards {
+        justify-content: center;
+        grid-template-columns: 360px;
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: 16px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .browseAll_button {
+        margin-top: 40px;
+        margin-bottom: 96px;
+    }
+}
